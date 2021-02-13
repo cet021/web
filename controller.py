@@ -1,8 +1,10 @@
 #!/usr/bin/env python3
 
 import flask
+import sys
 
 app = flask.Flask(__name__)
+print(*sys.path, sep='\n')
 
 
 @app.route('/')
