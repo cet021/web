@@ -17,5 +17,10 @@ def ip():
     return flask.request.remote_addr
 
 
+@app.route('/test')
+def test():
+    return '\n'.join(sys.path)
+
+
 if __name__ == '__main__':
     app.run()
