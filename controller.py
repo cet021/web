@@ -19,7 +19,7 @@ def ip():
 
 @app.route('/test')
 def test():
-    return '\n'.join(sys.path)
+    return '<br>'.join(sys.path)
 
 
 if __name__ == '__main__':
